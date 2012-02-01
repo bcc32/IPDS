@@ -68,9 +68,9 @@
                 <li><u>Java</u> is now used to develop large-scale enterprise applications, to enhance the functionality of web servers, to provide applications for consumer devices, and for many other purposes.
                 <li><u>C#</u> was designed specifically for the .NET platform to enable programmers to migrate easily to .NET.
                 <li><u>C</u> initially became widely known as the development language of the UNIX operating system.
-                <li><u>Pascal</u> was developed at Dartmouth College in the mid-1960s as a means of writing simple programs.
+                <li><u>BASIC</u> was developed at Dartmouth College in the mid-1960s as a means of writing simple programs.
                 <li><u>FORTRAN</u> was developed by IBM Corporation in the mid-1950s to be used for scientific and engineering applications that require complex mathematical computations.
-                <li><u>COBOL</u> is used for commercial applications that require complex mathematical computations.
+                <li><u>COBOL</u> is used for commercial applications that require precise and efficient manipulation of large amounts of data.
                 <li>The <u>C++</u> programming language was developed by Bjarne Stroustrup in the early 1980s at Bell Laboratories.
             </ol>
             <li><ol class="q2">
@@ -79,21 +79,25 @@
                 <li>The command <code>java</code> invokes the <u>JVM</u>, which executes Java programs.
                 <li>A <u>VM</u> is a software application that simultates a computer, but hides the underlying operating system and hardware from the programs that interact with it.
                 <li>A <u>portable</u> program can run on multiple platforms.
+                <!-- Java?-->
                 <li>The <u>class loader</u> takes the <code>.class</code> files containing the program's bytecodes and transfers them to primary memory.
-                <li>The <u>bytecode validator</u> examines bytecodes to ensure that they are valid.
+                <li>The <u>bytecode verifier</u> examines bytecodes to ensure that they are valid.
             </ol>
-            <li>Firstly, the Java compiler translates Java source code into bytecodes, creating <code>.class</code> files.  Next, the JVM (Java Virtual Machine) intiates the steps necessary to execute the application, beginning the loading of the program into memory.
+            <li>Firstly, the Java compiler translates Java source code into bytecodes, creating <code>.class</code> files.  Next, the JVM (Java Virtual Machine) uses a JIT compilation to translate the bytecodes to machine language.
             <li><ol class="q2">
                 <li>object: the watch is the object, describing various parts, behaviours, and qualities of the watch
                 <li>attributes: qualities of the watch, such as colour, size, weeight, material, brand name, prices, etc.
+                <!-- the time! -->
                 <li>behaviours: things one can do with the watch, such as read the time, set the watch, and start and stop the chronograph
                 <li>class: that which describes watches in general, such as a generic diagram of a wristwatch, etc.
                 <li>inheritance: all watches have the most basic attributes and behaviours of any watch, such as size or reading the time
+                <!-- also, a watch would inherit from clocks -->
                 <li>abstraction: rather than describing such a device as individual parts, e.g., a needle, a quartz movement, a strap, a battery, and so on, one can describe it simply as a "watch", representing the object in a human-meaningful way
                 <li>modeling: one can model a watch using a schematic, pictoral, 2D representation like a blueprint
                 <li>messages: a watch may send messages like audible beeps to the user, and the user may adjust the watch using the crown
-                <li>encapsulation: the watch protects the inside parts, which do work to display the time
-                <li>interface and information hiding: one cannot see the inside of a watch, which implements the watch behaviour
+                <li>encapsulation: the watch includes behaviours and attributes
+                <li>interface: the watch's crown, etc. used to interface w/ it
+                <li>information hiding: one cannot see the inside of a watch, which implements the watch behaviour
             </ol>
         </ol>
     </body>
