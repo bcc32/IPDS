@@ -14,7 +14,7 @@ public class c2n25
 
         if ( n % 2 == 0 )
             System.out.println( "Even." );
-        if ( n % 2 != 0 )
+        else
             System.out.println( "Odd." );
     }
 }
