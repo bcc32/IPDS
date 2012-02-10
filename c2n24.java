@@ -31,9 +31,9 @@ public class c2n24
 
         System.out.print( "Enter fourth integer: " );
         d = input.nextInt();
-        if ( c < min )
+        if ( d < min )
             min = d;
-        if ( c > max )
+        if ( d > max )
             max = d;
 
         System.out.print( "Enter fifth integer: " );
