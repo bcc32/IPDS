@@ -7,20 +7,16 @@ public class TimerTest
 {
     public static void main( String[] args )
     {
-        /*
-        Timer time = new Timer();
-        time.setHour( 8 );
-        time.setMinute( 41 );
-        time.setSecond( 20 );
+        Scanner input = new Scanner( System.in );
 
-        int hour = time.getHour();
-        int minute = time.getMinute();
-        int second = time.getSecond();
+        System.out.print( "Enter hour: " );
+        int hour = input.nextInt();
+        System.out.print( "Enter minute: " );
+        int minute = input.nextInt();
+        System.out.print( "Enter second: " );
+        int second = input.nextInt();
 
-        System.out.printf( "The time is %d:%d:%d\n", hour, minute, second );
-        */
-
-        Timer time = new Timer( 8, 41, 20 );
+        Timer time = new Timer( hour, minute, second );
         System.out.println( time );
     }
 }

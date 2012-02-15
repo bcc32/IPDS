@@ -48,6 +48,6 @@ public class Timer
     // toString
     public String toString()
     {
-        return hour + ":" + minute + ":" + second;
+        return String.format( "%d:%02d:%02d", hour, minute, second );
     }
 }
