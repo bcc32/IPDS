@@ -4,14 +4,14 @@
 public class Date
 {
     // instance variables
-    int month, day, year;
+    private int month, day, year;
 
     // constructor
     public Date( int m, int d, int y )
     {
-        month = m;
-        day = d;
-        year = y;
+        setMonth( m );
+        setDay( d );
+        setYear( y );
     }
 
     // set methods

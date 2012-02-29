@@ -4,17 +4,17 @@
 public class Invoice
 {
     // instance variables
-    String partNumber, description;
-    int quantity;
-    double price;
+    private String partNumber, description;
+    private int quantity;
+    private double price;
 
     // constructor
     public Invoice( String pn, String desc, int quan, double pr )
     {
-        partNumber = pn;
-        description = desc;
-        quantity = quan;
-        price = pr;
+        setPartNumber( pn );
+        setDescription( desc );
+        setQuantity( quan );
+        setPrice( pr );
     }
 
     // set methods

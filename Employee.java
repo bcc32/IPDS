@@ -4,15 +4,15 @@
 public class Employee
 {
     // instance variables
-    String firstName, lastName;
-    double salary;
+    private String firstName, lastName;
+    private double salary;
 
     // constructor
     public Employee( String fn, String ln, double sal )
     {
-        firstName = fn;
-        lastName = ln;
-        salary = sal;
+        setFirstName( fn );
+        setLastName( ln );
+        setSalary( sal );
     }
 
     // set methods
