@@ -19,5 +19,6 @@ public class GradeBookTest
         GradeBook book = new GradeBook( courseName, instructorName );
 
         book.displayMessage();
+        book.determineClassAverage();
     }
 }
