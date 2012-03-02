@@ -62,6 +62,6 @@ public class GradeBook
         average = total / gradeCounter;
 
         System.out.printf( "\nTotal of all 10 grades is %d\n", total );
-        System.out.printf( "Class average is %d\n", average );
+        System.out.printf( "Class average is %f\n", average );
     }
 }
