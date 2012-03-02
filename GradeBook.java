@@ -1,6 +1,8 @@
 // Aaron Zeng 20120227
 // Chapter 03 Exercise 11
 
+import java.util.*;
+
 public class GradeBook
 {
     private String courseName, instructorName;
@@ -40,5 +42,28 @@ public class GradeBook
             getCourseName() );
         System.out.printf( "This course is presented by: %s\n",
             getInstructorName() );
+    }
+
+    public void determineClassAverage()
+    {
+        Scanner input = new Scanner( System.in );
+
+        int total = 0, gradeCounter = 0, grade;
+        double average;
+
+        System.out.print( "Enter grade (-1 to quit): " );
+        grade = input.nextInt();
+        while ( grade != -1 )
+        {
+            total += grade;
+            gradeCounter++;
+            System.out.print( "Enter grade (-1 to quit): ");
+            grade = input.nextInt();
+        }
+
+        average = total / gradeCounter;
+
+        System.out.printf( "\nTotal of all 10 grades is %d\n", total );
+        System.out.printf( "Class average is %f\n", average );
     }
 }
