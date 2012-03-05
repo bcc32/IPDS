@@ -51,17 +51,15 @@ public class GradeBook
         int total = 0, gradeCounter = 0, grade;
         double average;
 
-        System.out.print( "Enter grade (-1 to quit): " );
-        grade = input.nextInt();
-        while ( grade != -1 )
+        for ( System.out.print( "Enter grade (-1 to quit): " ),
+            grade = input.nextInt(); grade != -1; System.out.print(
+            "Enter grade (-1 to quit): " ), grade = input.nextInt() )
         {
             total += grade;
             gradeCounter++;
-            System.out.print( "Enter grade (-1 to quit): ");
-            grade = input.nextInt();
         }
 
-        average = total / gradeCounter;
+        average = (double)total / gradeCounter;
 
         System.out.printf( "\nTotal of all 10 grades is %d\n", total );
         System.out.printf( "Class average is %f\n", average );
