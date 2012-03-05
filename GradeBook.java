@@ -59,7 +59,7 @@ public class GradeBook
             gradeCounter++;
         }
 
-        average = total / gradeCounter;
+        average = (double)total / gradeCounter;
 
         System.out.printf( "\nTotal of all 10 grades is %d\n", total );
         System.out.printf( "Class average is %f\n", average );
