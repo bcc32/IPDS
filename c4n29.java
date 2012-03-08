@@ -17,10 +17,21 @@ public class c4n29
 
         while ( hCounter <= size )
         {
-            while ( wCounter <= size )
+            if ( hCounter == 1 || hCounter == size )
+                while ( wCounter <= size )
+                {
+                    System.out.print( "*" );
+                    wCounter++;
+                }
+            else
             {
                 System.out.print( "*" );
-                wCounter++;
+                while ( wCounter <= size - 2 )
+                {
+                    System.out.print( " " );
+                    wCounter++;
+                }
+                System.out.print( "*" );
             }
             System.out.println();
             wCounter = 1;
