@@ -11,7 +11,7 @@ public class c4n33
         int n = 2;
         while ( true )
         {
-            System.out.println( n );
+            System.out.printf( "%d ", n );
             n *= 2;
         }
     }
