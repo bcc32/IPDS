@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Chapter 05 Exercises</title>
+        <style type="text/css">
+            * {
+                font-family: "Ubuntu";
+            }
+            code {
+                font-family: "Ubuntu Mono";
+            }
+            ol.q1 {
+                list-style-type: decimal;
+            }
+            ol.q2 {
+                list-style-type: lower-latin;
+            }
+        </style>
+    </head>
+    <body>
+        <ol class="q1" start=5>
+            <li>Four basic elements of counter-controlled repetition:
+            <ol class="q1">
+                <li>Counter variable
+                <li>Initialization of counter
+                <li>Loop repetition condition (e.g., <code>counter &lt;= x</code>)
+                <li>Incrementation of counter
+            </ol>
+            <li>The <code>while</code> statement repeats a statement as long as a condition is true, but the <code>for</code> statement includes two other statements: an initialization and an increment statement (commonly used for counter-controlled repetition).  Both statements repeat a statement as long as a condition holds, but the <code>for</code> statement has "added features".
+            <li>It would be more appropriate to use a <code>do...while</code> statement rather than a <code>while</code> statement if, say, the programmer wants the user to keep trying until they correctly input a value; the do-while loop would always execute at least once, and this saves two lines of code (prompt and accept).
+            <li>Both the <code>break</code> and <code>continue</code> statments cause the program to skip the rest of the loop body, but the <code>break</code> statement causes the program to exit the loop as well; the <code>continue</code> statement does not.
+            <li>Error correction:
+            <ol class="q2">
+                <li>The <code>for</code> statement should not be capitalized, and there should be semicolons, not commas, between the parts of the statement.
+                <li>There is no <code>break</code> statement after the <code>case 0:</code> label, so if <code>value</code> is even, the program will print both the odd and even statements (clearly undesired).  Correct by adding the break statement in its correct place.
+                <li>The increment used is <code>i += 2</code>, so the value of <code>i</code> will keep increasing, and the loop will never terminate.  Correct by writing <code>i -= 2</code> instead.
+                <li>The <code>while</code> statement should not be capitalized, and the condition <code>counter &lt; 100</code> results in the loop terminating before <code>100</code> is printed; correct by changing <code>counter &lt; 100</code> to <code>counter &lt;= 100</code>.
+            </ol>
+            <li>The program writes a 10 row, 5 column rectangle of <code>'@'</code> characters to the screen.
+        </ol>
+    </body>
+</html>
