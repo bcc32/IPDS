@@ -27,7 +27,10 @@ public class c5n15
         for ( int i = 1; i <= 10; i++ )
         {
             for ( int j = 1; j <= 10; j++ )
-                System.out.print( j < i ? ' ' : '*' );
+                if ( j < i )
+                    System.out.print( ' ' );
+                else
+                    System.out.print( '*' );
             System.out.println();
         }
         System.out.println();
@@ -36,7 +39,10 @@ public class c5n15
         for ( int i = 1; i <= 10; i++ )
         {
             for ( int j = 1; j <= 10; j++ )
-                System.out.print( i + j <= 10 ? ' ' : '*' );
+                if ( i + j <= 10 )
+                    System.out.print( ' ' );
+                else
+                    System.out.print( '*' );
             System.out.println();
         }
     }
