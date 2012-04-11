@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Chapter 06 Exercises</title>
+        <style type="text/css">
+            * {
+                font-family: "Ubuntu";
+            }
+            code {
+                font-family: "Ubuntu Mono";
+            }
+            ol.q1 {
+                list-style-type: decimal;
+            }
+            ol.q2 {
+                list-style-type: lower-latin;
+            }
+        </style>
+    </head>
+    <body>
+        <ol class="q1">
+            <li><ol class="q2">
+                <li>A method is invoked with a <u>method call</u>.
+                <li>A variable known only within the method in which it's declared is called a <u>local variable</u>.
+                <li>The <u>return</u> statement in a called method can be used to pass a value of an expression back to the calling method.
+                <li>The keyword <u>void</u> indicates that a method does not return a value.
+                <li>Data can be added or removed only from the <u>top</u> of a stack.
+                <li>Stacks are known as <u>last in, first out (LIFO)</u> data structures&emdash;the last item pushed (inserted) on the stack is the first item popped (removed) from the stack.
+                <li>The three ways to return control from a called method to a caller are <u><code>return;</code></u>, <u><code>return <i>expr</i>;</code></u>, and <u>reaching the end of the method</u>.
+                <li>An object of class <u><code>Random</code></u> produces random numbers.
+                <li>The program-execution stack contains the memory for local variables on each invocation of a method during a program's execution.  These data, stored as a portion of the program-execution stack, is known as the <u>activation record</u>, or <u>stack frame</u> of the method call.
+                <li>If there are more method calls than can be stored on the program-execution stack, an error known as a <u>stack overflow</u> occurs.
+                <li>The <u>scope</u> of a declaration is the portion of a program that can refer to the entity in the declaration by name.
+                <li>It's possible to have several methods with the same name that each operate on different types or numbers of arguments.  This feature is called method <u>overloading</u>.
+                <li>The program-execution stack is also referred to as the <u>method-call</u> stack.
+            </ol>
+            <li><ol class="q2">
+                <li>The variable <code>randomNumbers</code> is in scope throughout class <code>Craps</code>.
+                <li>The variable <code>die1</code> is in scope throughout method <code>rollDice()</code>.
+                <li>The method <code>rollDice()</code> is in scope throughout class <code>Craps</code>.
+                <li>The method <code>play()</code> is in scope throughout class <code>Craps</code>.
+                <li>The variable <code>sumOfDice</code> is in scope throughout method <code>play()</code>.
+            </ol>
+        </ol>
+        <ol class="q1" start=4>
+            <li><ol class="q2">
+                <li><code>double hypotenuse( double side1, double side2 )</code>
+                <li><code>int smallest( int x, int y, int z )</code>
+                <li><code>void instructions()</code>
+                <li><code>float intToFloat( int number )</code>
+            </ol>
+        </ol>
+    </body>
+</html>
