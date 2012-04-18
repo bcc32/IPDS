@@ -5,7 +5,7 @@ public class c6n34
 {
     public static void main( String[] args )
     {
-        System.out.println( "dec\toct\thex\tbin\t" );
+        System.out.println( "dec\thex\toct\tbin\t" );
         for ( int i = 0; i < 256; i++ )
         {
             printDec( i );
@@ -23,13 +23,44 @@ public class c6n34
 
     public static void printOct( int n )
     {
-        // stuff here
+        for ( int d = pow8( n ); d >= 1; d /= 8 )
+        {
+            System.out.print( n / d );
+            n %= d;
+        }
         System.out.print( "\t" );
+    }
+
+    public static int pow8( int n )
+    {
+        int pow = 0, pow8 = 1;
+        while ( n / pow8 >= 8 )
+        {
+            pow++;
+            pow8 *= 8;
+        }
+        return pow8;
     }
 
     public static void printHex( int n )
     {
-        System.out.print( Integer.toString( n, 16 ).toUpperCase() + "\t" );
+        for ( int d = pow16( n ); d >= 1; d /= 16 )
+        {
+            printHexDigit( n / d );
+            n %= d;
+        }
+        System.out.print( "\t" );
+    }
+
+    public static int pow16( int n )
+    {
+        int pow = 0, pow16 = 1;
+        while ( n / pow16 >= 16 )
+        {
+            pow++;
+            pow16 *= 16;
+        }
+        return pow16;
     }
 
     public static void printHexDigit( int num )
@@ -66,6 +97,22 @@ public class c6n34
 
     public static void printBin( int n )
     {
-        System.out.print( Integer.toString( n, 2 ) + "\t" );
+        for ( int d = pow2( n ); d >= 1; d /= 2 )
+        {
+            System.out.print( n / d );
+            n %= d;
+        }
+        System.out.print( "\t" );
+    }
+
+    public static int pow2( int n )
+    {
+        int pow = 0, pow2 = 1;
+        while ( n / pow2 >= 2 )
+        {
+            pow++;
+            pow2 *= 2;
+        }
+        return pow2;
     }
 }
