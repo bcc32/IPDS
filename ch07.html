@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Chapter 07 Exercises</title>
+        <style type="text/css">
+            * {
+                font-family: "Ubuntu";
+            }
+            code {
+                font-family: "Ubuntu Mono";
+            }
+            ol.q1 {
+                list-style-type: decimal;
+            }
+            ol.q2 {
+                list-style-type: lower-latin;
+            }
+        </style>
+    </head>
+    <body>
+        <ol class="q1" start=6>
+            <li><ol class="q2">
+                <li>One-dimensional array <u><code>p</code></u> contains four elements.  The names of those elements are <u><code>p[0]</code></u>, <u><code>p[1]</code></u>, <u><code>p[2]</code></u>, and <u><code>p[3]</code></u>.
+                <li>Naming an array, stating its type, and specifying the number of dimensions in the array is called <u>declaring</u> the array.
+                <li>In a two-dimensional array, the first index identifies the <u>row</u> of an element and he second index identifies the <u>column</u> of an element.
+                <li>An <i>m</i>-by-<i>n</i> array contains <u><i>m</i></u> rows, <u><i>n</i></u> columns, and <u><i>mn</i></u> elements.
+                <li>The name of the element in row 3 and column 5 of array <code>d</code> is <u><code>d[3][5]</code></u>.
+            </ol>
+            <li><ol class="q2">
+                <li>False: to refer to a particular element, we specify the name of the array and the index of the particular element.
+                <li>True: an array delcaration reserves space for the array.
+                <li>False: to indicate that 100 locations should be reserved for integer array <code>p</code>, the programmer writes the declaration <code>int[] p = new int[100];</code>.
+                <li>False: each element can be initialized individually.
+                <li>True: an application that totals the elements of a two-dimensional array must contain nested <code>for</code> statements.
+            </ol>
+            <li><ol class="q2">
+                <li><code>System.out.println( f[6] );</code>
+                <li><code>g[0] = 8; g[1] = 8; g[2] = 8; g[3] = 8; g[4] = 8;</code>
+                <li>
+<pre><code>int sum = 0;
+for ( int i = 0; i &lt; 100; i++ )
+{
+    sum += c[i];
+}
+</code></pre>
+                <li>
+<pre><code>for ( int i = 0; i &lt; 11; i++ )
+{
+    b[i] = a[i];
+}
+</code></pre>
+                <li>
+<pre><code>double min = w[0];
+double max = w[0];
+for ( int i = 1; i &lt; 99; i++ )
+    if ( w[i] &lt; min )
+        min = w[i];
+    else if ( w[i] &gt; max )
+        max = w[i];
+</code></pre>
+            </ol>
+            <li><ol class="q2">
+                <li><code>int[][] t = new int[2][3];</code>
+                <li><code>t</code> has 2 rows.
+                <li><code>t</code> has 3 columns.
+                <li><code>t</code> has 6 elements.
+                <li><code>t[1][0]</code>, <code>t[1][1]</code>, <code>t[1][2]</code>
+                <li><code>t[0][2]</code>, <code>t[1][2]</code>, <code>t[2][2]</code>
+                <li><code>t[0][1] = 0;</code>
+                <li><code>t[0][0] = 0; t[0][1] = 0; t[0][2] = 0; t[1][0] = 0; t[1][1] = 0; t[1][2] = 0;</code>
+                <li>
+<pre><code>for ( int i = 0; i &lt; 2; i++ )
+    for ( int j = 0; j &lt; 3; j++ )
+        t[i][j] = 0;
+</code></pre>
+                <li>Assuming a <code>java.util.Scanner</code> object called <code>input</code> has been declared.
+<pre><code>for ( int i = 0; i &lt; 2; i++ )
+    for ( int j = 0; j &lt; 3; j++ )
+        t[i][j] = input.nextInt();
+</code></pre>
+                <li>
+<pre><code>int min = t[0][0];
+for ( int i = 0; i &lt; 2; i++ )
+    for ( int j = 0; j &lt; 3; j++ )
+        if ( t[i][j] &lt; min )
+            min = t[i][j];
+System.out.printf( "Smallest value in t is %d\n", min );
+</code></pre>
+                <li><code>System.out.printf( "%d\t%d\t%d\n", t[0][0], t[0][1], t[0][2] );</code>
+                <li><code>int total = t[0][2] + t[1][2];</code>
+                <li>
+<pre><code>System.out.println( "\t0\t1\t2" );
+for ( int i = 0; i &lt; 2; i++ )
+{
+    System.out.printf( "%d\t", i );
+    for ( int j = 0; j &lt; 3; j++ )
+        System.out.printf( "%d\t", t[j] );
+}
+System.out.println();
+</code></pre>
+            </ol>
+        </ol>
+    </body>
+</html>
