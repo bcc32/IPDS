@@ -10,7 +10,15 @@ public class c4n23
     {
         // declare and initialize variables
         Scanner input = new Scanner( System.in );
-        int counter = 1, number, max1, max2; // max1 is largest, max2 second
+        int counter = 2, number, max1, max2; // max1 is largest, max2 second
+
+        // prompt for and accept number
+        System.out.println( "Enter number: " );
+        number = input.nextInt();
+
+        // if this is the first time through, initialize max1 and max2
+        max1 = number;
+        max2 = number;
 
         // repeat ten-fold
         while ( counter <= 10 )
