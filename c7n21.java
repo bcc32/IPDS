@@ -34,7 +34,7 @@ public class c7n21
                     dir = ( dir + 1 ) % 4;
                     break;
                 case 4:
-                    dir = ( dir - 1 ) % 4;
+                    dir = ( dir + 3 ) % 4;
                     break;
                 case 5:
                     int num = input.nextInt();
