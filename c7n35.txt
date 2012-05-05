@@ -1,0 +1,60 @@
+// (a) Use a sentinel-controlled loop to read 10 positive numbers.  Compute and
+// display their sum.
+00  +1009   // Read A
+01  +2009   // Load A
+02  +4107   // Branch if negative
+03  +4207   // Branch if zero
+04  +3010   // Add B
+05  +2110   // Store B
+06  +4000   // Branch to 00
+07  +1110   // Write B
+08  +4300   // Halt
+09  +0000   // Variable A
+10  +0000   // Variable B (sum)
+
+// (b) Use a counter-controlled loop to read seven numbers, some positive and
+// some negative, and compute and display their average.
+00  +10XX   // Read A
+01  +20XX   // Load A
+02  +30XX   // Add B
+03  +21XX   // Store B
+04  +20XX   // Load C
+05  +31XX   // Subtract D
+06  +21XX   // Store C
+07  +42XX   // Branch if zero
+08  +4000   // Branch to 00
+09  +20XX   // Load B
+10  +32XX   // Divide by E
+11  +21XX   // Store F
+12  +11XX   // Write F
+13  +4300   // Halt
+14  +0000   // Variable A
+15  +0000   // Variable B (sum)
+16  +0007   // Variable C (counter)
+17  +0001   // Variable D (increment)
+18  +0007   // Variable E (number of elements)
+19  +0000   // Variable F (average)
+
+// (c) Read a series of numbers, and determine and display the largest number.
+// The first number read indicates how many numbers should be processed.
+00  +10XX   // Read B
+01  +20XX   // Load B
+02  +21XX   // Store D
+03  +10XX   // Read A
+04  +20XX   // Load C
+05  +31XX   // Subtract A
+06  +41XX   // Branch if negative
+07  +20XX   // Load D
+08  +31XX   // Subtract E
+09  +4214   // Branch if zero
+10  +4003   // Branch to 03
+11  +20XX   // Load A
+12  +21XX   // Store C
+13  +4003   // Branch to 03
+14  +11XX   // Write C
+15  +4300   // Halt
+16  +0000   // Variable A
+17  +0000   // Variable B (number of elements)
+18  -9999   // Variable C (maximum)
+19  +0000   // Variable D (counter)
+20  +0001   // Variable E (increment)
