@@ -73,7 +73,7 @@ public class c7n36
         System.out.println( "MEMORY:" );
         System.out.printf( "%8d%6d%6d%6d%6d%6d%6d%6d%6d%6d\n", 0, 1, 2, 3, 4, 5,
             6, 7, 8, 9 );
-        for ( int i = 0; i < 100; i += 10 )
+        for ( int i = 0; i < LEN; i += 10 )
         {
             System.out.printf( "%-3d", i );
             System.out.printf( "%+05d ", mem[i] );
@@ -91,7 +91,7 @@ public class c7n36
 
     public static void inputMem()
     {
-        for ( int idx = 0; idx < mem.length; idx++ )
+        for ( int idx = 0; idx < LEN; idx++ )
         {
             System.out.printf( "%02d ? ", idx );
             try
@@ -137,7 +137,7 @@ public class c7n36
     public static void exec()
     {
         idx = 0;
-        while ( idx < 100 )
+        while ( idx < LEN )
         {
             boolean incr = true;
             foo = mem[idx] / 100;
