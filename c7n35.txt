@@ -14,19 +14,19 @@
 
 // (b) Use a counter-controlled loop to read seven numbers, some positive and
 // some negative, and compute and display their average.
-00  +10XX   // Read A
-01  +20XX   // Load A
-02  +30XX   // Add B
-03  +21XX   // Store B
-04  +20XX   // Load C
-05  +31XX   // Subtract D
-06  +21XX   // Store C
-07  +42XX   // Branch if zero
+00  +1014   // Read A
+01  +2014   // Load A
+02  +3015   // Add B
+03  +2115   // Store B
+04  +2016   // Load C
+05  +3117   // Subtract D
+06  +2116   // Store C
+07  +4209   // Branch if zero
 08  +4000   // Branch to 00
-09  +20XX   // Load B
-10  +32XX   // Divide by E
-11  +21XX   // Store F
-12  +11XX   // Write F
+09  +2015   // Load B
+10  +3218   // Divide by E
+11  +2119   // Store F
+12  +1119   // Write F
 13  +4300   // Halt
 14  +0000   // Variable A
 15  +0000   // Variable B (sum)
@@ -37,21 +37,22 @@
 
 // (c) Read a series of numbers, and determine and display the largest number.
 // The first number read indicates how many numbers should be processed.
-00  +10XX   // Read B
-01  +20XX   // Load B
-02  +21XX   // Store D
-03  +10XX   // Read A
-04  +20XX   // Load C
-05  +31XX   // Subtract A
-06  +41XX   // Branch if negative
-07  +20XX   // Load D
-08  +31XX   // Subtract E
+// TODO the program doesn't actually work due to overflow...
+00  +1017   // Read B
+01  +2017   // Load B
+02  +2119   // Store D
+03  +1016   // Read A
+04  +2018   // Load C
+05  +3116   // Subtract A
+06  +4111   // Branch if negative
+07  +2019   // Load D
+08  +3120   // Subtract E
 09  +4214   // Branch if zero
 10  +4003   // Branch to 03
-11  +20XX   // Load A
-12  +21XX   // Store C
+11  +2016   // Load A
+12  +2118   // Store C
 13  +4003   // Branch to 03
-14  +11XX   // Write C
+14  +1118   // Write C
 15  +4300   // Halt
 16  +0000   // Variable A
 17  +0000   // Variable B (number of elements)
