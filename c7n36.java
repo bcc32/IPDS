@@ -25,6 +25,7 @@ public class c7n36
     static final int BRANCHNEG = 41;
     static final int BRANCHZERO = 42;
     static final int HALT = 43;
+    static final int DUMP = 44;
 
     static Scanner input;
 
@@ -201,6 +202,9 @@ public class c7n36
                     displayHalt();
                     dump();
                     System.exit( 0 );
+                    break;
+                case DUMP:
+                    dump();
                     break;
             }
             if ( incr )
