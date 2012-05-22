@@ -73,6 +73,34 @@ public class Time
         this.second = second >= 0 && second < 60 ? second : 0;
     }
 
+    // calc methods
+    public void tick()
+    {
+        second++;
+        if ( second >= 60 )
+        {
+            second = 0;
+            incrementMinute();
+        }
+    }
+
+    public void incrementMinute()
+    {
+        minute++;
+        if ( minute >= 60 )
+        {
+            minute = 0;
+            incrementHour();
+        }
+    }
+
+    public void incrementHour()
+    {
+        hour++;
+        if ( hour >= 24 )
+            hour = 0;
+    }
+
     // "string" methods
     public String toString()
     {

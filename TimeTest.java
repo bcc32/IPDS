@@ -11,6 +11,13 @@ public class TimeTest
         System.out.printf( "The second is %d\n", time1.getSecond() );
 
         Time time2 = new Time( time1 );
-        System.out.printf( "The time is %s\n", time1 );
+        System.out.printf( "The time is %s\n", time2 );
+
+        Time time3 = new Time();
+        for ( int i = 0; i <= 86400; i++ )
+        {
+            System.out.println( time3 );
+            time3.tick();
+        }
     }
 }
