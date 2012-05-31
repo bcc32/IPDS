@@ -1,0 +1,188 @@
+1. Get methods are used to access the instance variables within an object.
+    For example, time1.getHour() would return the instance variable hour.
+
+2. Set methods are used to modify the instance variables within an object.
+    For example, time1.setHour( 3 ) would assign the value 3 to variable hour.
+
+3. Constructors are used to create a new instance of a class: an object.
+    For example, Time time1 = new Time( 15, 20, 0 ) would create a new Time
+    object called time1, set to the time 15:20:00.
+
+4. Type double is used to represent floating-point values that aren't integers.
+    For example, type double might be used to represent the value 3.14159.
+
+5. Classes are a template for creating an object; they describe the instance
+    variables and methods available for objects of that class.
+    Objects are data structures that have attributes (instance variables) and
+    behaviours (methods) that usually represent some real-life object.
+    Classes are "templates" to objects; they describe the objects.
+    Objects are "instances" of a class; they are described by the class.
+
+6. Instance variables are the attributes of each individual object.
+    For example, a Time object might have an instance variable called hour.
+
+7. Primitive types are native data types that occupy a set amount of memory and
+    do not refer to an object.
+    Reference types are data types that refer to objects, and are of a certain
+    class, so they are "references" to an area of memory.
+
+10. Sequential, Selection, Repetition
+
+11. Some control statements:
+    if: if the provided condition is true, the following block is executed.
+    else: if the above if statement does not execute, the else statement does.
+    switch: executes instructions depending on the value of an expression.
+    while: executes instructions while the provided condition is true.
+    do-while: executes instructions, then repeats while the condition is true.
+    for: used for counter-controlled looping; initializer, condition, increment.
+    break: leaves the current loop
+    continue: starts over with the next iteration of the loop
+    return: leaves the current method, and may return a value.
+
+12. Pre-increment and Post-increment operators both increment a variable by 1.
+    Pre-increment increments the variable before its use in the expression.
+    Post-increment increments the variable after its use in the expression.
+
+13.
+    superNerds = superNerds + 1;
+    superNerds += 1;
+    superNerds++;
+    ++superNerds;
+
+14. Structured programming refers to using a language with control structures
+    and in particular without "goto"-style statements.
+
+15. Pseudocode is a English-language representation of an algorithm that doesn't
+    use proper syntax but outlines the instructions that the program contains.
+
+16. An algorithm is a set of computer instructions that produces some result
+    given an input.  Thus, an algorithm accomplishes something high-level in
+    low-level terms.
+
+17. Sentinel-controlled repetition continues until a certain value ("sentinel")
+    is encountered, and then the loop stops.
+    Counter-controlled repetition repeats a certain number of times.
+    Both are used to repeat a set of instructions under certain conditions.
+
+18.
+    if ( x == 7 )
+        if ( y == 7 )
+            System.out.println( "x and y are both 7" );
+
+    The above program checks whether the variable x is set to the value 7.
+    If so, the program checks whether the variable y is set to the value 7.
+    If both are true, the program prints the statement "x and y are both 7".
+
+19.
+    prompt for and accept variable "num"
+    while num != -1:
+        d1 = num / 1000
+        d2 = num % 1000 / 100
+        d3 = num % 100 / 10
+        d4 = num % 10
+        if d4 > d3 and d3 > d2 and d2 > d1:
+            print number and "ascending is true"
+        else:
+            print number and "ascending is false"
+        prompt for and accept variable "num"
+
+21.
+    a. Conditional OR checks whether at least one of its arguments is true.
+    b. Boolean logical OR checks whether at least one of its arguments is true.
+        However, conditional OR is short-circuited; boolean logical OR is not.
+    c. Conditional AND checks whether all of its arguments are true.
+    d. Boolean logical AND checks whether all of its arguments are true.
+        However, conditional AND is short-circuited; boolean logical AND is not.
+    e. Logical negation changes a boolean value to the opposite value.
+
+22.
+    a. A while loop executes a block of code while a certain condition is true
+    b. A do...while loop executes a block of code, then repeats it while a
+        certain condition is true
+    c. A for loop initializes a counter variable and executes a block of code
+        while that variable has a correct value, and increments the counter each
+        time it executes the block of code.
+    Both the while loop and do...while loop must be checked to make sure that
+    they will terminate; that is, that the condition will become false.
+
+23. The rules are:
+    1. Any statement can be replaced with two statements.
+        For example, a System.out.print() statement can be replaced with two.
+    2. Any statement can be replaced with a conditional statement.
+        For example, a System.out.print() statement can be replaced with an if.
+    3. Any statement can be replaced with a looping statement.
+        For example, a System.out.print() statement can be replaced with a for.
+    4. Any rule can be applied any number of times.
+        For example, a System.out.print() statement can be replaced with two
+        if statements.
+
+24. break: leaves the current loop
+    continue: starts over with the next iteration of the loop
+    break and continue are used to check for certain conditions within a loop
+        and to exit or continue the loop, respectively.
+
+28.
+    methodName(): used to call a method within the same class
+        such as arrayAverage() when defined in the same class as main()
+    object.methodName(): used to call a non-static method within an object
+        such as a time1.getMinute() or employee1.toString()
+    class.methodName(): used to call a static method within a class
+        such as Math.pow() or String.format()
+
+29. Method overloading refers to multiple parameter specifications for a method
+    with the same name, allowing a method to be called with variable arguments.
+    For example, System.out.printf() can be called with 1-infinity arguments.
+    Another example is constructors, which can have some number n parameters.
+
+30. Programs are written with methods to
+    1. Take less space
+    2. Organize the code flow
+    3. Make code more readable
+    4. Reuse old code
+    5. Make programming top-down, not bottom-up
+
+31.
+    a. Static fields are class variables that do not change per object
+    b. Static methods are class methods that do not change per object
+    c. main() is static because instances of the class are never created
+    d. Items in class Math are static because they never change
+
+32. Fields and variables are available only where they are declared and within
+    that place; thus class variables are available in the class and its methods
+    and local variables are available only in the declaring method.
+
+33.
+    a. Argument promotion will change an integer argument to a double one
+        if required by the method declaration, or another such conversion to a
+        "higher" data type.
+        For example, Math.pow( 2, 4 ) will convert 2 and 4 to 2.0 and 4.0,
+        respectively because Math.pow() specifies double arguments.
+    b. Casting forcibly converts a value to another data type.
+        For example, (int)( 2.0 + 4.0 ) will convert 6.0 to 6.
+
+36.
+    int[] avapma;
+    avapma = new int[20];
+
+37.
+    for ( int i = 0; i < avapma.length; i++ )
+        avapma[i] = 5 * i;
+
+38.
+    for ( int i = 0; i < avapma.length; i++ )
+        System.out.printf( "%d\t%d\n", i, avapma[i] );
+
+39.
+    int avapmaSum = 0;
+    for ( int num : avapma )
+        avapmaSum += num;
+
+40.
+    int[] avapma6 = { 100, 20, 80, 40, 50, 60 };
+
+41.
+    int max = 0;
+    for ( int i = 1; i < avapma6.length; i++ )
+        if ( avapma6[i] > avapma6[max] );
+            max = i;
+    System.out.printf( "avapma[%d] is the largest: %d\n", max, avapma[max] );
